@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var distancia = 80000;
+        var transporte = '';
+
+        if (distancia > 0 && distancia <= 1000) {
+            transporte = 'pie';
+        } else if (distancia > 1000 && distancia <= 5000) {
+            transporte = 'bicicleta';
+        } else if (distancia > 5000 && distancia <= 10000) {
+            transporte = 'colectivo';
+        } else if (distancia > 10000 && distancia <= 50000) {
+            transporte = 'auto';
+        } else if (distancia > 50000) {
+            transporte = 'avion';
+        }
+
+        console.log('Para ' + distancia + ' distancia recomendamos ir en ' + transporte);
+        
+    </script>
+    
+</body>
+</html>
