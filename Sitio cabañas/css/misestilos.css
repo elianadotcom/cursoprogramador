@@ -1,0 +1,66 @@
+h1{
+    font-family: 'Roboto';
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+h2{
+    font-family: 'Roboto slab';
+    font-weight: lighter;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+}
+
+p{
+    font-family: 'Roboto Slab';
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer{
+    background-color: #aaa;
+}
+
+.hero {
+    background: url(../img/San-Martin-de-los-Andes-Verano.jpg) center;
+    background-size: 100%;
+    height: 50vh;
+    min-height: 600px;
+    color: white;
+}
+
+.lista-novedades {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-novedades li {
+    margin: 4px 0;
+}
+
+.lista-novedades li a {
+    background-color: #fff;
+    font-family: 'roboto slab', cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+.lista-novedades li a:hover {
+    color: #212529;
+    background-color: #dadada;
+}
+.lista-novedades li a img {
+    width: 120px;
+    height: 50px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 1;
+}
+.lista-novedades li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
