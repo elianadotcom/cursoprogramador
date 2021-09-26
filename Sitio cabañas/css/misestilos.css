@@ -35,12 +35,12 @@ footer{
 }
 
 .lista-novedades li {
-    margin: 4px 0;
+    margin: 15px 0;
 }
 
 .lista-novedades li a {
     background-color: #fff;
-    font-family: 'roboto slab', cursive;
+    font-family: 'roboto slab';
     text-decoration: none;
     font-size: 1.2rem;
     color: #a0a0a0;
