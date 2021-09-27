@@ -1,19 +1,25 @@
 h1{
     font-family: 'Roboto';
     font-weight: bolder;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 2px dimgray;
 }
 h2{
     font-family: 'Roboto slab';
     font-weight: lighter;
-    color: whitesmoke;
-    text-shadow: 1px 1px 2px black;
+    color: ghostwhite;
+    text-shadow: 1px 1px 2px  rgb(63, 63, 63);
+}
+h5{
+    font-family: 'Roboto slab';
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+
 }
 
 p{
     font-family: 'Roboto Slab';
     font-weight: lighter;
-    text-shadow: 1px 1px 1px black;
+    
 }
 
 footer{
@@ -63,4 +69,9 @@ footer{
     filter: none;
     margin-right: 1.4rem;
     opacity: 1;
+}
+.staff {
+    background-color: #efefef;
+    font-size: 1.2rem;
+    color:black;
 }
