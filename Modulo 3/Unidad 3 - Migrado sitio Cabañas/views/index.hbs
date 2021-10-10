@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-light navbar-fixed-top navbar-expand-lg" style="background-color: #a1a1a1;">
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand">Cabañas Ensueño</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -30,11 +30,11 @@
             <h2>Cabañas</h2>
             <ul class="lista-novedades">
                 <li>
-                    <a href="#" data-toggle="modal" data-target="#modalEjemplo"><img src="img/cabanainicio.jpg">Cab para
+                    <a href="#" data-toggle="modal" data-target="#modalEjemplo"><img src="images/cabanainicio.jpg">Cab para
                         3 personas.</a>
                 </li>
                 <li>
-                    <a href="#" data-toggle="modal" data-target="#modalEjemplo"><img src="img/cabanainicio.jpg">Cab para
+                    <a href="#" data-toggle="modal" data-target="#modalEjemplo"><img src="images/cabanainicio.jpg">Cab para
                         4 personas.</a>
                 </li>
             </ul>
@@ -73,13 +73,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/foto1.jpg" class="d-block w-100" alt="...">
+                        <img src="images/foto1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/foto2.jpg" class="d-block w-100" alt="...">
+                        <img src="images/foto2.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/foto3.jpg" class="d-block w-100" alt="...">
+                        <img src="images/foto3.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -100,7 +100,7 @@
             <h2>Nuestro Destino</h2>
             <div class="card-deck">
                 <div class="card">
-                    <img src="img/7lagos.jpg" class="card-img-top" alt="...">
+                    <img src="images/7lagos.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <u>
                             <h5 class="card-title">Mítica Ruta 7 Lagos</h5>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/pqnl.jpg" class="card-img-top" alt="...">
+                    <img src="images/pqnl.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <u>
                             <h5 class="card-title">Parque Nacional Lanin</h5>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/chapelco.jpg" class="card-img-top" alt="...">
+                    <img src="images/chapelco.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <u>
                             <h5 class="card-title">Cerro Chapelco</h5>
@@ -153,33 +153,34 @@
         </div>
         <div class="col-md-4 mt-4 mt-sm-0">
             <h2>Contactanos</h2>
-            <form>
+            <form action="/" method="post">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="...">
+                        <input type="text" class="form-control" id="nombre" placeholder="..." name="nombre">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="apellido">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="...">
+                        <input type="text" class="form-control" id="apellido" placeholder="..." name="apellido">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
+                        <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com" name="email">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="tel">Tel</label>
-                        <input type="tel" class="form-control" id="tel" placeholder="...">
+                        <label for="telefono">Tel</label>
+                        <input type="telefono" class="form-control" id="telefono" placeholder="..." name="telefono">
                     </div>
                     <div class="form-group col-md-12">
-                        <label for="consulta">Consulta</label>
-                        <textarea class="form-control" id="consulta" rows="4"></textarea>
+                        <label for="mensaje">Consulta</label>
+                        <textarea name="mensaje" class="form-control" id="mensaje" rows="4"></textarea>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
                 </div>
             </form>
+            <p>{{message}}</p>
         </div>
     </div><!-- aca termina visitanos-->
-    <footer>
-        <h6 class="text-center">Diseñado por Lais 2021</h6>
-    </footer>
+    </div>
+
+    </div>
