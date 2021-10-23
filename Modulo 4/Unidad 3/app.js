@@ -5,7 +5,10 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 374aaacd5c78c0f6fb85b1630d5b8ed753633b24
 var pool = require('./models/bd');
 
 var indexRouter = require('./routes/index');
