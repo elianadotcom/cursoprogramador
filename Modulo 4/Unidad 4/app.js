@@ -25,6 +25,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: 'kasdjrybwehsdfjskdhjasdlsadhalf',
+  resave: false,
+  saveUninitialized: true
+}));
+
+
 secured = async (req, res, next) => {
   try {
     console.log(req.session.id_usuario);
