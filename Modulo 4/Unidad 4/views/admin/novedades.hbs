@@ -12,11 +12,11 @@
 
     {{!-- fila 2 --}}
     <div class="row">
-        <div class="col-7" style="margin: top -10px;">
-            <h2>Listado reservas</h2>
+        <div class="col-4" style="margin: top -10px;">
+            <h2>Comentarios</h2>
         </div>
         <div class="col-9 text-right">
-            <a href="#" class="btn btn-secondary"> <i class="fas fa plus"></i>+ Nueva RVA</a>
+            <a href="/admin/novedades/agregar" class="btn btn-secondary"> <i class="fas fa plus"></i>+ Nuevo Comentario</a>
         </div>
     </div>
     {{!-- fin fila 2 --}}
@@ -27,29 +27,27 @@
             <table class="table">
                 <thead class="table-dark">
                     <tr>
-                    <th scope="col">Numero de reserva</th>
-                    <th scope="col">Titular</th>
-                    <th scope="col">Fecha In</th>
-                    <th scope="col">Comentarios</th>
+                        <th scope="col">N°</th>
+                        <th scope="col">Titular</th>
+                        <th scope="col">Comentarios</th>
+                        <th scope="col">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     {{#each novedades}}
                     <tr>
                         <th scope="row">{{id}}</th>
-                        <td>{{Titular}}</td>
+                        <td>{{titular}}</td>
+                            <td>{{comentarios}}</td>
                         <td class="text-right">
-                            <a href=" " class="btn btn-secondary"><i class="fas fa-pencil-alt"></i></a>
-                            <a href="/admin/novedades/eliminar/{{id}} "
-                            class="btn btn-secondary"><i class="fas fa-trash"></i></a>
+                            <a href="/admin/novedades/modificar/{{id}}" title="Editar" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i></a>
+                            <a href="/admin/novedades/eliminar/{{id}}" title="Eliminar" class="btn btn-secondary"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
-                    <tr>
                     {{/each}}
                 </tbody>
             </table>
         </div>
     </div>
-
     {{!-- fin fila 3 --}}
 </div>

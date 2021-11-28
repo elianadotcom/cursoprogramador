@@ -42,4 +42,4 @@ router.post('/', async (req, res, next) => {
     } catch (error) {
         console.log(error);
     }
-})
+});
